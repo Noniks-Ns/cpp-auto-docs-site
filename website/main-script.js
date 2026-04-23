@@ -1,3 +1,7 @@
+// interpreter //
+
+const consoleForm = document.getElementById('consoleForm');
+
 // ---Settings--- //
 
 const settingsOpenButton = document.getElementById('settingsOpenButton');
