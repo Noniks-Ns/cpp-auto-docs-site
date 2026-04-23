@@ -20,6 +20,7 @@ function saveTheme() {
 
 changeThemeButton.addEventListener('click', () => {
     darkTheme = !darkTheme;
+    changeThemeButton.textContent = darkTheme ? "Light mode ON" : "Light mode OFF";
 
     if (darkTheme) {
         document.documentElement.classList.add('dark');
