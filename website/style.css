@@ -1,1 +1,15 @@
+:root {
+  --primary-color:   #ffffff;
+  --secondary-color: #f0f0f0;
+  --thirdary-color:  #e0e0e0;
+  --fourary-color:   #757575;
+  --text-color:      #222222;
+}
 
+html.dark {
+  --primary-color: #1e1e1e;
+  --secondary-color: #2d2d2d;
+  --thirdary-color: #3c3c3c;
+  --fourary-color: #959595;
+  --text-color: #ffffff;
+}
