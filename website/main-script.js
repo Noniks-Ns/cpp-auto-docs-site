@@ -35,7 +35,7 @@ function openAnimation(isForOpen) {
 }
 
 settingsOpenButton.addEventListener('click', () => {
-    const isForOpen = settingsFrame.style.display === "none";
+    const isForOpen = window.getComputedStyle(settingsFrame).display === "none";
     openAnimation(isForOpen);
 });
 
