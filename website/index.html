@@ -3,10 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Untitled</title>
 </head>
 <body>
-    <header></header>
-    <main></main>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <div class="dropdown-container" id="settingsDropdown">
+                        <button id="settingsOpenButton">Settings</button>
+                        <section class="settings" id="settingsFrame">
+                            <button id="changeThemeButton" class="settings-button">Light theme: ON</button>
+                        </section>
+                    </div>
+                </li>
+                <li><button id="consoleOpenButton">Console</button></li>
+                <li><a href="#projectsFrame">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="ConsoleFrame" id="ConsoleFrame">
+            <!-- Console content -->
+        </section>
+        <section class="projectsFrame" id="projectsFrame">
+            <!-- projects content -->
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
