@@ -144,11 +144,11 @@ a {
   transition: var(--transition);
 }
 
-.dropdown-container:hover .settings-button {
+.settings-button:hover {
   transform: translateY(-5px);
 }
 
-.dropdown-container:hover .settings-button::after {
+.settings-button:hover::after {
   width: calc(100% + 35px);
 }
 
