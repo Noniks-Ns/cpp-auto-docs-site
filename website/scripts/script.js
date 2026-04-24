@@ -1,6 +1,12 @@
-// interpreter //
+// console //
 
-const consoleForm = document.getElementById('consoleForm');
+const consoleOpenButton = document.getElementById('consoleOpenButton');
+const ConsoleFrame = document.getElementById('ConsoleFrame');
+
+consoleOpenButton.addEventListener('click', () => {
+    ConsoleFrame.classList.toggle('open');
+    ConsoleFrame.scrollIntoView({ behavior: 'smooth', block: 'start' })
+});
 
 // ---Settings--- //
 
@@ -14,7 +20,23 @@ settingsOpenButton.addEventListener('click', () => {
 // ---Settings/Theme--- //
 
 const changeThemeButton = document.getElementById('changeThemeButton');
+
+const container = document.querySelector('.dropdown-container');
+const button = document.querySelector('.settings-button');
+const settings = document.querySelector('.settings');
+
 let darkTheme = false;
+
+button.addEventListener('click', (e) => {
+  e.stopPropagation();
+  settings.classList.toggle('open');
+});
+
+document.addEventListener('click', (e) => {
+  if (!container.contains(e.target)) {
+    settings.classList.remove('open');
+  }
+});
 
 function loadTheme() {
     const savedTheme = localStorage.getItem('theme');
