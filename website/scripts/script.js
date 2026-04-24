@@ -4,7 +4,7 @@ const consoleOpenButton = document.getElementById('consoleOpenButton');
 const ConsoleFrame = document.getElementById('ConsoleFrame');
 
 consoleOpenButton.addEventListener('click', () => {
-    ConsoleFrame.classList.toggle('open');
+    ConsoleFrame.classList.toggle('visible');
     ConsoleFrame.scrollIntoView({ behavior: 'smooth', block: 'start' })
 });
 
