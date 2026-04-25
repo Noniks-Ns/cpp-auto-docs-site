@@ -67,3 +67,29 @@ changeThemeButton.addEventListener('click', () => {
 });
 
 loadTheme();
+
+// ---menu--- //
+
+const menuButton = document.getElementById('menu-button');
+const nav = document.querySelector('nav');
+const textSpan = menuButton.querySelector('.button-text');
+
+nav.classList.add('open');
+
+menuButton.addEventListener('click', () => {
+    const isNavOpen = nav.classList.contains('open');
+
+    if (isNavOpen) {
+        nav.classList.remove('open');
+        nav.classList.add('close');
+        textSpan.textContent = 'Menu';
+    } else {
+        nav.classList.remove('close');
+        nav.classList.add('open');
+        textSpan.textContent = 'Close Menu';
+    }
+
+    textSpan.classList.add('fade');
+    setTimeout(() => textSpan.classList.remove('fade'), 300);
+});
+
